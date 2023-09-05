@@ -2,27 +2,26 @@ import streamlit as st
 import requests
 from filters import genres, ratings, release_date
 
-st.title("Movie Recommendation")
+st.title("MovieSage")
 
-user_prompt= st.text_input("Enter prompt: ", placeholder="A rogue space explorer plans an intergalactic heist")
+user_prompt= st.text_input("Enter a prompt: ", placeholder="A rogue space explorer plans an intergalactic heist")
 
-st.subheader("Genre")
 genre_options = st.multiselect("Select genres:", genres, placeholder="")
 
-st.subheader("Ratings")
 rating_options = st.selectbox("Select minimum rating:", ratings, placeholder="")
 
-st.subheader("Release date")
 release_date_options = st.selectbox("Select a release date:", release_date, placeholder="")
+
+nb_recos = st.number_input("Number of recommendations", value=1, min_value=1)
 
 prompt_button = st.button("Submit", key="prompt")
 
 if prompt_button:
-        print(genre_options)
         response = requests.get(f"http://localhost:8000/recommendations", params={"user_prompt": user_prompt,
                                                                                   "rating": rating_options,
                                                                                   "release_date": release_date_options,
-                                                                                  "genres": genre_options})
+                                                                                  "genres": genre_options,
+                                                                                  "nb_recos": nb_recos})
         data = response.json()
         st.write("API Response:")
         st.json(data)

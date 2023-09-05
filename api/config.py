@@ -1,12 +1,12 @@
-import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from decouple import config
 
-USER_NAME = os.environ["USER_NAME"]
-DB_PASSWORD = os.environ["DB_PASSWORD"]
-HOST_NAME = os.environ["HOST_NAME"]
-DB_PORT = os.environ["DB_PORT"]
-DB_NAME = os.environ["DB_NAME"]
+USER_NAME = config("USER_NAME")
+DB_PASSWORD = config("DB_PASSWORD")
+HOST_NAME = config("HOST_NAME")
+DB_PORT = config("DB_PORT")
+DB_NAME = config("DB_NAME")
 
 DATABASE_URL = f"postgresql://{USER_NAME}:{DB_PASSWORD}@{HOST_NAME}:{DB_PORT}/{DB_NAME}"
 
