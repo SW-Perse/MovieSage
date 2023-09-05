@@ -15,9 +15,9 @@ async def index():
 
 @app.get("/recommendations")
 async def get_recommendations(user_prompt: str, rating: int, release_date: int, nb_recos:int, genres: List[str] = Query(None)):
-    titles, embedding_all = query_database(genres, rating, release_date)
+    titles, synopsis, embedding_all = query_database(genres, rating, release_date)
     query_all = user_query_embedding_all(user_prompt)
-    recos_all = recommendations_all(query_all, titles, embedding_all, nb_recos)
+    recos_all = recommendations_all(query_all, titles, synopsis, embedding_all, nb_recos)
     return recos_all
 
 if __name__=="__main__":
