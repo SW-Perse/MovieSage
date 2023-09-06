@@ -78,12 +78,11 @@ if prompt_button:
          
    st.write("Here are your personalized recommandations!")
    recos = response.json()
-   st.write(recos[0]["rank"], recos[0]["title"], recos[0]["summary"])
-        #for i in response.json():
+   for i in range(len(recos)): 
+     st.write("- " , recos[i]["rank"] , " : " , recos[i]["title"] , "\n")#, recos[0]["summary"])
 
-                #st.markdown("- " + i["rank"] + " : " + i["title"]+ ", score : " + i["score"] + "\n")
 # Sidebar
 st.sidebar.header("The team")
 st.sidebar.write("Made with ♥️ and 🤖")
-st.sidebar.write("by Charlotte, Lauri, Sophie & Victor")
+st.sidebar.write("by Charlotte, Laurie, Sophie & Victor")
 st.sidebar.write("@JEDHA")
