@@ -45,16 +45,16 @@ def recommendations_all(query_all, titles, synopsis, embedding_all, nb_recos):
     for i in range (len(titles)):
       reco_rank = i+1
       title = titles[result[0][i]["corpus_id"]]
-      summary = synopsis[result[0][0][i]["corpus_id"]]
+      #summary = synopsis[result[0][0][i]["corpus_id"]]
       #score = result[0][i]["score"]
-      i_dict = {"rank" : reco_rank, "title" : title, "summary" : summary}
+      i_dict = {"rank" : reco_rank, "title" : title}# "summary" : summary}
       recos_all.append(i_dict) 
   else:  
     for i in range (nb_recos):
       reco_rank = i+1
       title = titles[result[0][i]["corpus_id"]]
-      summary = synopsis[result[0][0][i]["corpus_id"]]
+      #summary = synopsis[result[0][0][i]["corpus_id"]]
       #score = result[0][i]["score"]
-      i_dict = {"rank" : reco_rank, "title" : title, "summary" : summary}
+      i_dict = {"rank" : reco_rank, "title" : title}# "summary" : summary}
       recos_all.append(i_dict)
   return recos_all 
