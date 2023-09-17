@@ -5,10 +5,12 @@ This is the repository for "MovieSage", a personalized, prompt-based movie recom
 The purpose of our work is to offer an alternative to contet-based or user-base recommendation services. MovieSage allows you to describe in details the type of movie you would like to watch, and add somme optional filtering options, in order to obtain a list of potential matches to your request.
 
 Here is a demo video of our app :
+
 https://github.com/SW-Perse/MovieSage/assets/136578812/d034d69d-8883-45d1-bb25-d1d1f6946081
 
 ## Data
 Our app currently uses the "Top 10000 popular Movies TMDB" from Kaggle : https://www.kaggle.com/datasets/ursmaheshj/top-10000-popular-movies-tmdb-05-2023
+
 The EDA section of this repository explores this dataset in further details.
 
 ## Model
