@@ -2,7 +2,7 @@
 ## Introduction
 This is the repository for "MovieSage", a personalized, prompt-based movie recommandation engine. This was our final 10-days project in the JEDHA Data Science Fullstack bootcamp.
 
-The purpose of our work is to offer an alternative to contet-based or user-base recommendation services. MovieSage allows you to describe in details the type of movie you would like to watch, and add somme optional filtering options, in order to obtain a list of potential matches to your request.
+The purpose of our work is to offer an alternative to content-based or user-base recommendation services. MovieSage allows you to describe in details the type of movie you would like to watch, and add somme optional filtering options, in order to obtain a list of potential matches to your request.
 
 Here is a demo video of our app :
 
