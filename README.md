@@ -11,7 +11,7 @@ https://github.com/SW-Perse/MovieSage/assets/136578812/d034d69d-8883-45d1-bb25-d
 ## Data
 Our app currently uses the "Top 10000 popular Movies TMDB" from Kaggle : https://www.kaggle.com/datasets/ursmaheshj/top-10000-popular-movies-tmdb-05-2023
 
-The EDA section of this repository explores this dataset in further details.
+The "EDA" section of this repository explores this dataset in further details.
 
 ## Model
 MovieSage uses SentenceTransformers' 'all-mpnet-base-v2' for synopsis and user prompt embedding. Documentation on how to use this model can be found here : https://www.sbert.net/
