@@ -1,0 +1,9 @@
+[browser]
+serverAddress = localhost
+
+[theme]
+base="dark"
+primaryColor="#d2a11d"
+
+[server]
+enableStaticServing = true
