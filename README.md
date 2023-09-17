@@ -6,7 +6,7 @@ The purpose of our work is to offer an alternative to content-based or user-base
 
 Here is a demo video of our app :
 
-https://github.com/SW-Perse/MovieSage/assets/136578812/d034d69d-8883-45d1-bb25-d1d1f6946081
+https://github.com/SW-Perse/MovieSage/assets/136578812/63138f6c-3c2f-428e-b4bd-333d48ccb079
 
 ## Data
 Our app currently uses the "Top 10000 popular Movies TMDB" from Kaggle : https://www.kaggle.com/datasets/ursmaheshj/top-10000-popular-movies-tmdb-05-2023
